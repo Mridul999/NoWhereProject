@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Slider 1 - Slider Revolution</title>
+	<meta name="description" content="Slider Revolution Example" />
+	<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+	<meta name="author" content="ThemePunch" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- LOAD JQUERY LIBRARY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+	<!-- LOADING FONTS AND ICONS -->
+	<link href="https://fonts.googleapis.com/css?family=Jost:600%2C500%2C700%7CPoppins:400%7CRoboto:400&display=swap"
+		rel="stylesheet" property="stylesheet" media="all" type="text/css">
+
+
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/rs6.css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<!-- REVOLUTION JS FILES -->
+
+	<script>
+		window.RS_MODULES = window.RS_MODULES || {};
+		window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+		window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+		window.RS_MODULES.defered = true;
+		window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+		window.RS_MODULES.type = 'compiled';
+	</script>
+	<script src="js/rbtools.min.js"></script>
+	<script src="js/rs6.min.js"></script>
+
+	<script>function setREVStartSize(e) {
+			//window.requestAnimationFrame(function() {
+			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+			try {
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+				if (e.layout === "fullscreen" || e.l === "fullscreen")
+					newh = Math.max(e.mh, window.RSIH);
+				else {
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+					var nl = new Array(e.rl.length),
+						ix = 0,
+						sl;
+					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+					sl = nl[0];
+					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+				}
+				var el = document.getElementById(e.c);
+				if (el !== null && el) el.style.height = newh + "px";
+				el = document.getElementById(e.c + "_wrapper");
+				if (el !== null && el) {
+					el.style.height = newh + "px";
+					el.style.display = "block";
+				}
+			} catch (e) {
+				console.log("Failure at Presize of Slider:" + e)
+			}
+			//});
+		};</script>
+
+
+</head>
+
+<body>
+
+
+	<!-- START Slider 1 REVOLUTION SLIDER 6.6.5 -->
+	<p class="rs-p-wp-fix"></p>
+	<rs-module-wrap id="rev_slider_2_1_wrapper" data-alias="slider-1" data-source="gallery"
+		style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+		<rs-module id="rev_slider_2_1" style="" data-version="6.6.5">
+			<rs-slides style="overflow: hidden; position: absolute;">
+				<rs-slide style="position: absolute;" data-key="rs-3" data-title="Slide"
+					data-thumb="assets/webdesign-1-50x100.jpg" data-anim="p:dark;f:slidebased;"
+					data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+					<img src="assets/webdesign-1.jpg" alt="" title="webdesign" width="2000" height="1091"
+						class="rev-slidebg tp-rs-img" data-no-retina>
+					<!--
+							--><rs-layer id="slider-2-slide-3-layer-0" data-type="text" data-rsp_ch="on"
+						data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+						data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+						data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-3-layer-1" data-type="text" data-rsp_ch="on"
+						data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+						data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:628px,628px,628px,242px;"
+						data-frame_0="y:50,50,50,19;" data-frame_1="sp:1000;" data-frame_999="o:0;st:w;"
+						style="z-index:6;font-family:'Jost';">Design Expert
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-3-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+						data-rsp_ch="on" data-xy="xo:255px,255px,255px,98px;yo:474px,474px,474px,182px;"
+						data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+						data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+						data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+						data-frame_999="o:0;st:w;"
+						data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+						style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S CHAT
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-3-layer-4" data-type="text" data-rsp_ch="on"
+						data-xy="xo:254px,254px,254px,97px;yo:392px,392px,392px,146px;"
+						data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:610px,610px,610px,335px;"
+						data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Transforming your vision into reality
+						with design.Expert designs that elevate your brand.
+					</rs-layer><!--
+--> </rs-slide>
+				<rs-slide style="position: absolute;" data-key="rs-87" data-title="Slide"
+					data-thumb="assets/ecommerce-scaled-50x100.jpg" data-anim="p:dark;f:slidebased;"
+					data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+					<img src="assets/ecommerce-scaled.jpg" alt="" title="ecommerce" width="2560" height="1707"
+						class="rev-slidebg tp-rs-img" data-no-retina>
+					<!--
+							--><rs-layer id="slider-2-slide-87-layer-0" data-type="text" data-rsp_ch="on"
+						data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+						data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+						data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-87-layer-1" data-type="text" data-rsp_ch="on"
+						data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+						data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:820px,820px,820px,317px;"
+						data-frame_1="e:power4.inOut;sp:1200;" data-frame_1_sfx="se:blocktoright;" data-frame_999="o:0;st:w;"
+						style="z-index:6;font-family:'Jost';">Development Expert
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-87-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+						data-rsp_ch="on" data-xy="xo:255px,255px,255px,97px;yo:474px,474px,474px,185px;"
+						data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+						data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+						data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+						data-frame_999="o:0;st:w;"
+						data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+						style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S CHAT
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-87-layer-4" data-type="text" data-rsp_ch="on"
+						data-xy="xo:254px,254px,254px,97px;yo:392px,392px,392px,146px;"
+						data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:680px,680px,680px,343px;"
+						data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Developing innovative solutions for
+						modern businesses.Building digital solutions that drive your success.
+					</rs-layer><!--
+--> </rs-slide>
+				<rs-slide style="position: absolute;" data-key="rs-88" data-title="Slide" data-thumb="assets/webapp-50x100.jpg"
+					data-anim="p:dark;f:slidebased;" data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+					<img src="assets/webapp.jpg" alt="" title="webapp" width="2000" height="1337" class="rev-slidebg tp-rs-img"
+						data-no-retina>
+					<!--
+							--><rs-layer id="slider-2-slide-88-layer-0" data-type="text" data-rsp_ch="on"
+						data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+						data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+						data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-88-layer-1" data-type="text" data-rsp_ch="on"
+						data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+						data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:820px,820px,820px,317px;"
+						data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="sp:1200;" data-frame_1_mask="u:t;"
+						data-frame_999="o:0;st:w;" style="z-index:6;font-family:'Jost';">Marketing Expert
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-88-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+						data-rsp_ch="on" data-xy="xo:255px,255px,255px,100px;yo:474px,474px,474px,181px;"
+						data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+						data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+						data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+						data-frame_999="o:0;st:w;"
+						data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+						style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S CHAT
+					</rs-layer><!--
+
+							--><rs-layer id="slider-2-slide-88-layer-4" data-type="text" data-rsp_ch="on"
+						data-xy="xo:254px,254px,254px,98px;yo:392px,392px,392px,144px;"
+						data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:680px,680px,680px,328px;"
+						data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Innovative marketing solutions for
+						modern businesses.Expert marketing that drives your business forward.
+					</rs-layer><!--
+--> </rs-slide>
+			</rs-slides>
+		</rs-module>
+		<script>
+
+		</script>
+		<script>
+			if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
+		</script>
+	</rs-module-wrap>
+	<!-- END REVOLUTION SLIDER -->
+
+	<script>
+		var tpj = jQuery;
+		if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider21"] = {
+			once: RS_MODULES.modules["revslider21"] !== undefined ? RS_MODULES.modules["revslider21"].once : undefined, init: function () {
+				window.revapi2 = window.revapi2 === undefined || window.revapi2 === null || window.revapi2.length === 0 ? document.getElementById("rev_slider_2_1") : window.revapi2;
+				if (window.revapi2 === null || window.revapi2 === undefined || window.revapi2.length == 0) { window.revapi2initTry = window.revapi2initTry === undefined ? 0 : window.revapi2initTry + 1; if (window.revapi2initTry < 20) requestAnimationFrame(function () { RS_MODULES.modules["revslider21"].init() }); return; }
+				window.revapi2 = jQuery(window.revapi2);
+				if (window.revapi2.revolution == undefined) { revslider_showDoubleJqueryError("rev_slider_2_1"); return; }
+				revapi2.revolutionInit({
+					revapi: "revapi2",
+					DPR: "dpr",
+					sliderLayout: "fullwidth",
+					visibilityLevels: "1240,1240,1240,480",
+					gridwidth: "1240,1240,1240,480",
+					gridheight: "800,800,800,310",
+					perspective: 600,
+					perspectiveType: "global",
+					editorheight: "800,768,960,310",
+					responsiveLevels: "1240,1240,1240,480",
+					progressBar: { disableProgressBar: true },
+					navigation: {
+						wheelCallDelay: 1000,
+						onHoverStop: false,
+						arrows: {
+							enable: true,
+							tmp: "<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
+							style: "zeus",
+							hide_onmobile: true,
+							hide_under: 778,
+							left: {
+								h_offset: 30
+							},
+							right: {
+								h_offset: 30
+							}
+						}
+					},
+					viewPort: {
+						global: false,
+						globalDist: "-200px",
+						enable: false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid: true
+					},
+				});
+
+			}
+		} // End of RevInitScript
+		if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
+	</script>
+
+
+
+	<style>
+		#rev_slider_2_1_wrapper .zeus.tparrows {
+			cursor: pointer;
+			min-width: 70px;
+			min-height: 70px;
+			position: absolute;
+			display: block;
+			z-index: 1000;
+			border-radius: 50%;
+			overflow: hidden;
+			background: rgba(0, 0, 0, 0.1)
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tparrows:before {
+			font-family: 'revicons';
+			font-size: 20px;
+			color: #ffffff;
+			display: block;
+			line-height: 70px;
+			text-align: center;
+			z-index: 2;
+			position: relative
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tparrows.tp-leftarrow:before {
+			content: '\e824'
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tparrows.tp-rightarrow:before {
+			content: '\e825'
+		}
+
+		#rev_slider_2_1_wrapper .zeus .tp-title-wrap {
+			background: rgba(0, 0, 0, 0.5);
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			opacity: 0;
+			transform: scale(0);
+			-webkit-transform: scale(0);
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			border-radius: 50%
+		}
+
+		#rev_slider_2_1_wrapper .zeus .tp-arr-imgholder {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-position: center center;
+			background-size: cover;
+			border-radius: 50%;
+			transform: translatex(-100%);
+			-webkit-transform: translatex(-100%);
+			transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder {
+			transform: translatex(100%);
+			-webkit-transform: translatex(100%)
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tparrows.rs-touchhover .tp-arr-imgholder {
+			transform: translatex(0);
+			-webkit-transform: translatex(0);
+			opacity: 1
+		}
+
+		#rev_slider_2_1_wrapper .zeus.tparrows.rs-touchhover .tp-title-wrap {
+			transform: scale(1);
+			-webkit-transform: scale(1);
+			opacity: 1
+		}
+	</style>
+</body>
+
+</html>

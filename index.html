@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenowhere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Jquery CDN link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <!-- Slider Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Jost:600%2C500%2C700%7CPoppins:400%7CRoboto:400&display=swap"
+    rel="stylesheet" property="stylesheet" media="all" type="text/css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind Css CDN Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <!-- Own Css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Slider Css -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/rs6.css">
+  <!-- Slider js -->
+  <script src="vendors/js/rbtools.min.js"></script>
+  <script src="vendors/js/rs6.min.js"></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <nav class="hidden lg:block py-5 w-full navbar">
+    <div class="container mx-auto">
+      <div class="flex justify-evenly items-center">
+        <div>
+          <a href="index.html"> <img src="images/logo/logo2.png" alt="" srcset="" class="w-56"></a>
+        </div>
+        <div class=" text-white text-xl font-semibold tracking-wider" id="menu">
+          <ul class="flex justify-center items-center space-x-6">
+            <li class="group relative">Design
+              <ul>
+                <li>
+                  <div class="hidden group-hover:block absolute w-[350px] bg-white p-5 rounded shadow-lg -left-full">
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/logodesign.png" alt="design" class="w-8">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg">Logo Design</h4>
+                          <p class="text-black text-sm font-sans">Designs that Make your brand shine</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="group relative">Develop
+              <ul>
+                <div
+                  class="hidden group-hover:block absolute w-[350px] bg-white p-5 rounded shadow-lg -left-full space-y-5">
+                  <li>
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/web-design.png" alt="design" class="w-12">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg">Web Design & Development</h4>
+                          <p class="text-black text-sm font-sans">Innovation website design for the modern business
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/website.png" alt="design" class="w-12">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg">E-commerce solutions</h4>
+                          <p class="text-black text-sm font-sans">Innovation website design for the modern business
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/online-shop.png" alt="design" class="w-12">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg">Custom web applications</h4>
+                          <p class="text-black text-sm font-sans">Innovative technology solution for modern business
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/content.png" alt="design" class="w-12">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg leading-5">Content management systems</h4>
+                          <p class="text-black text-sm font-sans">Innovative technology to manage you content
+                            effectively
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            <li class="group relative">Promote
+              <ul>
+                <li>
+                  <div class="hidden group-hover:block absolute w-[350px] bg-white p-5 rounded shadow-lg -left-full">
+                    <a href="#">
+                      <div class="flex items-center">
+                        <div class="mr-3">
+                          <img src="icons/key.png" alt="" srcset="" class="w-12">
+                        </div>
+                        <div>
+                          <h4 class="text-black text-lg">Google SEO</h4>
+                          <p class="text-black text-sm font-sans">Designs that Make your brand shine</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="-skew-x-12">
+          <a href="#">
+            <button
+              class="uppercase  transition-all duration-300 ease-in-out bg-[#ff6969] p-3 text-white border-[#ff6969] hover:bg-transparent border-2 hover:border-white flex items-center gap-2">
+              <p class=" skew-x-12">free
+                30 mins
+                consultation</p> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Mobile menu -->
+  <div class="container mx-auto block lg:hidden">
+    <div class="menu_icon_parent w-full pt-2">
+      <div class="flex  pl-[30px] sm:pl-[50px] md:pl-[98px] items-center">
+        <img src="images/logo/logo2.png" alt="logo" srcset="" class="w-40 sm:w-56">
+        <div class="absolute top-[15px] right-10 sm:right-[22%]">
+          <i class="fa-solid fa-bars text-3xl sm:text-4xl text-white" id="menu_icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="hidden w-full" id="mobile_nav">
+    <div class="container mx-auto">
+      <div class="flex justify-around items-center">
+        <div>
+          <img src="images/logo/logo2.png" alt="" srcset="" class="max-w-[200px]">
+        </div>
+        <div id="close" class="cursor-pointer">
+          <i class="fa-solid fa-xmark z-10 top-[15px] absolute text-4xl text-gray-700 right-[10%]"></i>
+        </div>
+        <div class="cursor-pointer">
+          <div id="accordion-collapse" data-accordion="collapse" class=" px-[20px] sm:px-[50px] md:px-[120px]">
+            <img src="images/logo/logo.png" alt="logo" srcset="" class="w-52 pt-2">
+            <div class="text-center mt-5 mb-2">
+              <div class="-skew-x-12">
+                <a href="#">
+                  <button
+                    class="uppercase  transition-all duration-300 ease-in-out bg-[#ff6969] p-3 text-white border-[#ff6969] hover:bg-transparent border-2 hover:border-white flex items-center gap-2">
+                    <p class=" skew-x-12">free
+                      30 mins
+                      consultation</p> <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-black  rounded-t-xl acco_headline bg-white acco_btn border-b"
+                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                aria-controls="accordion-collapse-body-1">
+                <span class="text-gray-800 text-2xl font-bold hover:text-[#ff6969]">Design</span>
+                <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+              <a href="#">
+                <div class="flex items-center pl-6 py-2">
+                  <div class="mr-3">
+                    <img src="icons/logodesign.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg font-semibold">Logo Design</h4>
+                    <p class="text-black text-sm font-sans">Designs that Make your brand shine</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <h2 id="accordion-collapse-heading-2">
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-black  rounded-t-xl acco_headline bg-white acco_btn border-b"
+                data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                aria-controls="accordion-collapse-body-2">
+                <span class="text-gray-800 text-2xl font-bold hover:text-[#ff6969]">Develop</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+              <a href="#">
+                <div class="flex items-center pl-6 py-2 border-b">
+                  <div class="mr-3">
+                    <img src="icons/web-design.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg font-semibold">Web Design & Development</h4>
+                    <p class="text-black text-sm font-sans">Innovation website design for the modern business
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="flex items-center pl-6 py-2 border-b">
+                  <div class="mr-3">
+                    <img src="icons/website.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg font-semibold">E-commerce solutions</h4>
+                    <p class="text-black text-sm font-sans">Innovation website design for the modern business
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="flex items-center pl-6 py-2 border-b">
+                  <div class="mr-3">
+                    <img src="icons/online-shop.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg font-semibold">Custom web applications</h4>
+                    <p class="text-black text-sm font-sans">Innovative technology solution for modern business
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="flex items-center pl-6 py-2 ">
+                  <div class="mr-3">
+                    <img src="icons/content.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg leading-5 font-semibold">Content management systems</h4>
+                    <p class="text-black text-sm font-sans">Innovative technology to manage you content
+                      effectively
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <h2 id="accordion-collapse-heading-3">
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-black  rounded-t-xl acco_headline bg-white acco_btn"
+                data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                aria-controls="accordion-collapse-body-3">
+                <span class="text-gray-800 text-2xl font-bold hover:text-[#ff6969]">Promote</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+              <a href="#">
+                <div class="flex items-center pl-6 py-2">
+                  <div class="mr-3">
+                    <img src="icons/key.png" alt="design" class="w-8">
+                  </div>
+                  <div>
+                    <h4 class="text-black text-lg font-semibold">Google SEO</h4>
+                    <p class="text-black text-sm font-sans">Driving traffic and leads to your website with SEO
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- Header Section End -->
+
+  <!-- Slider Section Start -->
+  <p class="rs-p-wp-fix"></p>
+  <rs-module-wrap id="rev_slider_2_1_wrapper" data-alias="slider-1" data-source="gallery"
+    style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+    <rs-module id="rev_slider_2_1" data-version="6.6.5">
+      <rs-slides style="overflow: hidden; position: absolute;">
+        <rs-slide style="position: absolute;" data-key="rs-3" data-title="Slide"
+          data-thumb="assets/webdesign-1-50x100.jpg" data-anim="p:dark;f:slidebased;"
+          data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+          <img src="vendors/assets/webdesign-1.jpg" alt="" title="webdesign" width="2000" height="1091"
+            class="rev-slidebg tp-rs-img" data-no-retina>
+          <rs-layer id="slider-2-slide-3-layer-0" data-type="text" data-rsp_ch="on"
+            data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+            data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+            data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+          </rs-layer><rs-layer id="slider-2-slide-3-layer-1" data-type="text" data-rsp_ch="on"
+            data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+            data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:628px,628px,628px,242px;"
+            data-frame_0="y:50,50,50,19;" data-frame_1="sp:1000;" data-frame_999="o:0;st:w;"
+            style="z-index:6;font-family:'Jost';">Design Expert
+          </rs-layer><rs-layer id="slider-2-slide-3-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+            data-rsp_ch="on" data-xy="xo:255px,255px,255px,98px;yo:474px,474px,474px,182px;"
+            data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+            data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+            data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+            data-frame_999="o:0;st:w;"
+            data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+            style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S START
+          </rs-layer><rs-layer id="slider-2-slide-3-layer-4" data-type="text" data-rsp_ch="on"
+            data-xy="xo:254px,254px,254px,97px;yo:392px,392px,392px,146px;"
+            data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:610px,610px,610px,335px;"
+            data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Transforming your vision into reality
+            with design.Expert designs that elevate your brand.
+          </rs-layer> </rs-slide>
+        <rs-slide style="position: absolute;" data-key="rs-87" data-title="Slide"
+          data-thumb="assets/ecommerce-scaled-50x100.jpg" data-anim="p:dark;f:slidebased;"
+          data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+          <img src="vendors/assets/ecommerce-scaled.jpg" alt="" title="ecommerce" width="2560" height="1707"
+            class="rev-slidebg tp-rs-img" data-no-retina>
+          <rs-layer id="slider-2-slide-87-layer-0" data-type="text" data-rsp_ch="on"
+            data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+            data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+            data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+          </rs-layer><rs-layer id="slider-2-slide-87-layer-1" data-type="text" data-rsp_ch="on"
+            data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+            data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:820px,820px,820px,317px;"
+            data-frame_1="e:power4.inOut;sp:1200;" data-frame_1_sfx="se:blocktoright;" data-frame_999="o:0;st:w;"
+            style="z-index:6;font-family:'Jost';">Development Expert
+          </rs-layer><rs-layer id="slider-2-slide-87-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+            data-rsp_ch="on" data-xy="xo:255px,255px,255px,97px;yo:474px,474px,474px,185px;"
+            data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+            data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+            data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+            data-frame_999="o:0;st:w;"
+            data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+            style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S START
+          </rs-layer><rs-layer id="slider-2-slide-87-layer-4" data-type="text" data-rsp_ch="on"
+            data-xy="xo:254px,254px,254px,97px;yo:392px,392px,392px,146px;"
+            data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:680px,680px,680px,343px;"
+            data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Developing innovative solutions for
+            modern businesses.Building digital solutions that drive your success.
+          </rs-layer> </rs-slide>
+        <rs-slide style="position: absolute;" data-key="rs-88" data-title="Slide" data-thumb="assets/webapp-50x100.jpg"
+          data-anim="p:dark;f:slidebased;" data-in="o:1;x:(100%);m:true;col:5;" data-out="a:false;">
+          <img src="vendors/assets/webapp.jpg" alt="" title="webapp" width="2000" height="1337"
+            class="rev-slidebg tp-rs-img" data-no-retina>
+          <rs-layer id="slider-2-slide-88-layer-0" data-type="text" data-rsp_ch="on"
+            data-xy="xo:247px,247px,247px,95px;yo:244px,244px,244px,93px;"
+            data-text="w:normal;s:40,40,40,15;l:25,25,25,9;fw:600;" data-dim="w:275px,275px,275px,106px;"
+            data-frame_999="o:0;st:w;" style="z-index:8;font-family:'Jost';">We Are
+          </rs-layer><rs-layer id="slider-2-slide-88-layer-1" data-type="text" data-rsp_ch="on"
+            data-xy="xo:248px,248px,248px,95px;yo:286px,286px,286px,110px;"
+            data-text="w:normal;s:78,78,78,29;l:89,89,89,33;fw:500;" data-dim="w:820px,820px,820px,317px;"
+            data-frame_0="y:100%;" data-frame_0_mask="u:t;" data-frame_1="sp:1200;" data-frame_1_mask="u:t;"
+            data-frame_999="o:0;st:w;" style="z-index:6;font-family:'Jost';">Marketing Expert
+          </rs-layer><rs-layer id="slider-2-slide-88-layer-2" class="rev-btn" data-type="button" data-color="#ff6969"
+            data-rsp_ch="on" data-xy="xo:255px,255px,255px,100px;yo:474px,474px,474px,181px;"
+            data-text="w:normal;s:20,20,20,7;l:50,50,50,19;fw:700;" data-dim="minh:0px,0px,0px,none;"
+            data-btrans="rY:-10;" data-padding="r:20,20,20,8;l:20,20,20,8;"
+            data-border="bos:solid;boc:#ff3a2d;bow:2px,2px,2px,2px;" data-frame_1="skX:-12.6px;"
+            data-frame_999="o:0;st:w;"
+            data-frame_hover="rY:0;c:#fff;bgc:#ff6969;boc:#ff6969;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:200;e:power1.inOut;"
+            style="z-index:7;background-color:rgba(255,255,255,0);font-family:'Jost';">LET'S START
+          </rs-layer><rs-layer id="slider-2-slide-88-layer-4" data-type="text" data-rsp_ch="on"
+            data-xy="xo:254px,254px,254px,98px;yo:392px,392px,392px,144px;"
+            data-text="w:normal;s:18,18,18,10;l:25,25,25,14;ls:1px,1px,1px,0px;" data-dim="w:680px,680px,680px,328px;"
+            data-frame_999="o:0;st:w;" style="z-index:9;font-family:'Poppins';">Innovative marketing solutions for
+            modern businesses.Expert marketing that drives your business forward.
+          </rs-layer> </rs-slide>
+      </rs-slides>
+    </rs-module>
+  </rs-module-wrap>
+  <!-- Wave -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute z-50 wave_global">
+    <path fill="#fff" fill-opacity="1"
+      d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,128C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      id="wave_svg"></path>
+  </svg>
+  <!-- Scroll Top -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+    class="inline-block p-3 bg-[#ff6969] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+    id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+      </path>
+    </svg>
+  </button>
+  <!-- Slider Section End -->
+  <!--==================== About Section ====================== -->
+  <section class="mb-14 overflow-hidden" id="about">
+    <a href="#"
+      class="uppercase mt-10 lg:mt-14 text-2xl sm:text-3xl underbar relative font-extrabold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet z-50">About
+      Our Company<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+        stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+    <div class="container mx-auto pt-10 pb-0 md:pt-16 md:pb-10">
+      <div class="flex justify-center gap-14 flex-wrap">
+        <div class="w-1/2 about_pic">
+          <img class="w-full" src="images/Backgrounds/aboutCompany.png" alt="" srcset="">
+        </div>
+        <div class="w-1/3 about_text">
+          <div class="mb-6 xl:pt-[68px]">
+            <h4 class="text-2xl sm:text-4xl text-black font-semibold">Building
+              Customized Web Solutions</h4>
+          </div>
+          <p class="text-base xl:text-xl text-[#6f6f6d]">We are a team of experienced professionals who are passionate
+            about developing complex web systems that meet the needs of our
+            clients. We specialize in building customized web solutions that
+            help businesses achieve their goals and thrive in the digital world.
+
+            Our mission is to provide our clients with a seamless and
+            stress-free experience from start to finish, and we pride ourselves
+            on our ability to deliver high-quality web systems that exceed our
+            clients' expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===================Services Section ==================== -->
+  <div id="services" class="section relative  pt-14 sm:pb-8  pb-10   md:pb-20 lg:pb-32 bg-white overflow-visible"
+    style="background: url(images/Backgrounds/servicesbg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="container xl:max-w-6xl mx-auto px-4">
+      <a href="#"
+        class="uppercase  text-2xl sm:text-3xl underbar relative font-bold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in text-white">
+        Our Services<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+          stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-white transition-all duration-200 ease-in">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </a>
+      <!-- row -->
+      <div class="flex flex-wrap flex-row -mx-4 text-center my-14 justify-center items-center">
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+          <!-- service block -->
+          <div
+            class="py-8 px-8 sm:px-12 mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-white mb-4">
+              <!-- icon -->
+              <img src="icons/web-design.png" alt="" srcset="" class="w-10 skew-x-12">
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">Web design and development</h3>
+            <p class="text-white skew-x-12">We design and develop websites that are
+              visually appealing, user-friendly, and op-timized for performance.</p>
+          </div>
+        </div>
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay=".1s"
+          style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+          <div
+            class="py-8 px-8 sm:px-12 mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-white mb-4">
+              <!-- icon -->
+              <img src="icons/online-shop.png" alt="" srcset="" class="w-10 skew-x-12">
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">E-commerce platform solutions
+            </h3>
+            <p class="text-white skew-x-12">We create powerful e-commerce
+              platforms that are designed to help
+              businesses sell their products online.</p>
+          </div>
+          <!-- end service block -->
+        </div>
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay=".3s"
+          style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+          <div
+            class="py-8 px-8 sm:px-12 mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-gray-900 mb-4">
+              <!-- icon -->
+              <img src="icons/website.png" alt="" srcset="" class="w-10 skew-x-12">
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">Custom web <br>applications</h3>
+            <p class="text-white skew-x-12">We develop custom web applications
+              that are designed to meet the specific
+              requirements of our clients.</p>
+          </div>
+        </div>
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+          <div
+            class="py-8 px-8 sm:px-12 mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-white mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="skew-x-12" width="2rem" height="2rem" fill="currentColor"
+                class="bi bi-card-checklist" viewBox="0 0 16 16">
+                <path
+                  d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z">
+                </path>
+                <path
+                  d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">Content management systems</h3>
+            <p class="text-white skew-x-12">We create sophisticated content
+              management systems that help
+              businesses manage their digital content.</p>
+          </div>
+        </div>
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay=".1s"
+          style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+          <div
+            class="py-8 px-8 sm:px-12 mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-white mb-4">
+              <!-- icon -->
+              <img src="icons/key.png" alt="" srcset="" class="w-10 skew-x-12">
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">SEO(Search Engine Optimization)
+            </h3>
+            <p class="text-white skew-x-12">SEO helps to improve the visibility of your website in search engine results
+              pages, leading to more organic traffic to
+              your website.
+            </p>
+          </div>
+        </div>
+        <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay=".3s"
+          style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+          <div
+            class="py-8 px-8 sm:px-12 mb-0 md:mb-12 bg-[#171e2a] border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 service_hover -skew-x-12 mx-[30px] sm:mx-0">
+            <div class="inline-block text-white mb-4">
+              <img src="icons/logodesign.png" alt="" srcset="" class="w-10 skew-x-12">
+            </div>
+            <h3 class="text-xl leading-normal mb-2 font-semibold text-white skew-x-12">Logo Design</h3>
+            <p class="text-white skew-x-12">A well-designed logo helps your brand stand out in a crowded marketplace and
+              makes it easier for customers to recognize
+              your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Wave -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="services_wave absolute z-30">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,128C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        id="wave_svg"></path>
+    </svg>
+  </div>
+  <!-- Tabs -->
+  <div class="site-wrapper pb-5 overflow-hidden relative z-50 bg-[#fafbfd] pt-10 sm:pt-14">
+    <section class="article-wrapper">
+      <div class="article-container">
+        <div class="article-block">
+          <div class="entry-content">
+            <h1 class="text-3xl md:text-4xl font-bold text-black">We’ve got tech stack for any project</h1>
+            <p class="mt-3 mb-4 text-base lg:text-xl">With an in-house full stack development team, we are able to
+              handle any
+              request you
+              may<br>
+              have that
+              others
+              can’t handle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tabs-wrapper pt-8 pb-10">
+      <div class="tabs-container">
+        <div class="tabs-block">
+          <div id="tabs-section" class="tabs tabss">
+            <ul class="tab-head">
+              <li>
+                <a href="#tab-3" class="tab-link active"> <span
+                    class="material-icons tab-icon text-[14px] sm:text-[17px] md:text-[20px]">Design</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab-4" class="tab-link"> <span
+                    class="material-icons tab-icon text-[14px] sm:text-[17px] md:text-[20px]">Develop</span></a>
+              </li>
+              <li>
+                <a href="#tab-5" class="tab-link"> <span
+                    class="material-icons tab-icon text-[14px] sm:text-[17px] md:text-[20px]">Promote</span></a>
+              </li>
+            </ul>
+            <section id="tab-3" class="tab-body entry-content active active-content pl-8 md:pl-24 min-h-[240px] sm:min-h-[350px]">
+              <div>
+                <img src="images/designtab1.png" alt="design" srcset="">
+              </div>
+            </section>
+
+            <section id="tab-4" class="tab-body entry-content pl-8 md:pl-24 min-h-[240px] sm:min-h-[350px]">
+              <img src="images/developtab.png" alt="" srcset="">
+              <img src="images/developtab2.png" alt="" srcset="" class="my-10">
+              <img src="images/developtab3.png" alt="" srcset="">
+            </section>
+
+            <section id="tab-5" class="tab-body entry-content pl-8 md:pl-24 min-h-[240px] sm:min-h-[350px]">
+              <div>
+                <img src="images/promote.png" alt="" srcset="">
+                <img src="images/promote2.png" alt="" srcset="">
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Tabs End -->
+  <!--====================   Who We Are Section========================= -->
+  <div class="container mx-auto">
+    <a href="#"
+      class="uppercase pt-10 sm:pt-16 text-2xl sm:text-3xl underbar relative font-bold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet">Who
+      We Are<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+        stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+    <div
+      class="px-[30px] sm:px-[50px] lg:flex justify-between xl:pl-5 sm:mx-10 md:mx-0 mt-16 md:mt-10 lg:mt-16 relative md:py-20">
+      <div class="-skew-x-12 pl-[45px] xl:pl-[52px] 2xl:pl-0 mr-[30px] sm:mr-28 xl:mr-0">
+        <img src="images/d2.jpg" alt="d-img2" class="w-[518px] lg:w-[630px] lg:h-[400px] xl:w-[644px] xl:h-[438px]" />
+        <div
+          class="lg:w-[400px] lg:h-[310px] xl:w-[600px] xl:h-[444px] w-[130px] h-[100px] sm:w-[300px] sm:h-[222px] bg-[#f72f54] absolute -top-8 lg:-top-16 left-16 lg:left-40 overflow-hidden hoverdiv">
+          <img src="images/img6.jpg" alt="img6"
+            class="scale-110 absolute bottom-0 transition-all duration-1000 ease-out hoverimage" />
+          <div class="w-full z-10 absolute -bottom-20 text-center hovertext">
+            <h2 class="text-xl lg:text-4xl uppercase text-white skew-x-12">
+              <span class="font-bold text-white">Wenowhere</span>
+            </h2>
+          </div>
+          <div class="hovergradient"></div>
+        </div>
+      </div>
+      <div class="lg:w-[41.33%] xl:w-1/3 flex flex-col justify-center mr-10 lg:mr-0 mt-5 lg:pl-10 xl:pl-5 2xl:pl-0">
+        <h3 class="text-2xl sm:text-3xl xl:text-4xl font-semibold">Innovation for exceptional web solutions.</h3>
+        <p class="text-[#6f6f6d] leading-relaxed mt-4 text-base xl:text-xl">
+          When you work with us, you can expect professional-
+          ism, dedication, and attention to detail every step of
+          the way. We are passionate about what we do, and
+          we look forward to collaborating with you to bring
+          your web vision to life.
+          We are committed to delivering exceptional results by
+          using the latest technologies and tools to ensure that
+          our clients get the best possible solutions. ut laoreet
+        </p>
+        <a href="#"
+          class="uppercase mt-4 text-sm font-bold flex items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet hover:text-[#ff6969]">Read
+          More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+            stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!--===================Proccess Section ==================== -->
+  <div id="proccess" class="container mx-auto my-10 sm:my-0 xl:px-[65px]">
+    <a href="#"
+      class="uppercase sm:mt-4 text-2xl sm:text-3xl underbar relative font-bold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet  mb-8 md:mb-16">
+      Our Proccess<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+        stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+    <div class="container mx-auto sm:py-5">
+      <div class="lg:flex lg:justify-center lg:items-center text-center lg:text-left mb-5 sm:mb-0  px-5 lg:px-0">
+        <div class="w-full lg:w-[618px] mb-5 sm:mb-0">
+          <h3 class="uppercase font-bold text-2xl lg:text-right text-center">Step 1</h3>
+        </div>
+        <div
+          class="sm:flex justify-center items-center sm:ml-8 lg:border-l-[5px] lg:border-[#444444] sm:pl-10 relative step_1">
+          <div class="sm:mr-4 flex justify-center items-center sm:block">
+            <img src="images/Dis.png" alt="discovery and planning" srcset="" class="w-16 sm:w-[100px]">
+          </div>
+          <div class="mb-3 py-3 sm:py-4">
+            <h5 class="text-xl md:text-2xl text-[#ff6969] font-bold mb-1">Discovery and planning</h5>
+            <p class="text-gray-600 text-sm sm:text-base max-w-[550px]">Our process is to learn about our
+              client's business objectives, require-
+              ments, and target audience.
+              Then we create a project plan that
+              outlines the scope of the project,
+              timeline, and milestones.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex justify-center items-center mt-4 mb-8  lg:mt-0 lg:mb-0">
+        <div class="lg:hidden">
+          <h3 class="uppercase font-bold text-2xl text-center">Step 2</h3>
+        </div>
+        <div class="flex justify-center  my-2 sm:hidden">
+          <img src="images/Design and Deployment.png" alt="" srcset="" class="sm:w-[115px] w-16 ">
+        </div>
+        <div
+          class="sm:flex justify-center items-center lg:border-r-[5px] lg:border-[#444444] sm:pr-10 relative step_2 sm:pl-4 md:pl-0 px-10 sm:px-0">
+          <div class="mb-3 sm:py-4 sm:mr-10">
+            <h5 class="text-xl md:text-2xl text-[#ff6969] font-bold mb-1 text-center lg:text-right">Design and
+              development</h5>
+            <p class="text-gray-600 text-sm sm:text-base sm:max-w-[550px]  text-center lg:text-right">Our design team
+              creates mockups and
+              wireframes
+              that provide a visual representation of the website or application. Then
+              our development team begins building the website or application.</p>
+          </div>
+          <div class="sm:block hidden">
+            <img src="images/Design and Deployment.png" alt="" srcset="" class="sm:w-[115px] w-16 ">
+          </div>
+        </div>
+        <div class="hidden lg:block w-[618px] sm:w-[755px] lg:w-[800px] md:w-[780px] pl-7">
+          <h3 class="uppercase font-bold text-2xl text-left">Step 2</h3>
+        </div>
+      </div>
+      <div class="lg:flex lg:justify-center lg:items-center text-center lg:text-left">
+        <div class="w-full lg:w-[618px] mb-5 sm:mb-0">
+          <h3 class="uppercase font-bold text-2xl lg:text-right text-center">Step 3</h3>
+        </div>
+        <div
+          class="sm:flex justify-center items-center sm:ml-8 lg:border-l-[5px] lg:border-[#444444] sm:pl-10 relative step_1">
+          <div class="sm:mr-4 flex justify-center items-center sm:block">
+            <img src="images/Testing.png" alt="discovery and planning" srcset="" class="w-16 sm:w-[100px]">
+          </div>
+          <div class="mb-3 py-3 sm:py-4 px-5 lg:px-0">
+            <h5 class="text-xl md:text-2xl text-[#ff6969] font-bold mb-1">Testing and deployment</h5>
+            <p class="text-gray-600 text-sm sm:text-base max-w-[550px]">Once the development is complete, we thoroughly
+              test the system to ensure that it functions as intended. The next step is to deploy the web system to the
+              client's server.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex justify-center items-center mt-4 mb-8  lg:mt-0 lg:mb-0">
+        <div class="lg:hidden">
+          <h3 class="uppercase font-bold text-2xl text-center">Step 4</h3>
+        </div>
+        <div class="flex justify-center  my-2 sm:hidden">
+          <img src="images/traning.png" alt="" srcset="" class="sm:w-[115px] w-16 ">
+        </div>
+        <div
+          class="sm:flex justify-center items-center lg:border-r-[5px] lg:border-[#444444] sm:pr-10 relative step_2 sm:pl-4 md:pl-0 px-10 sm:px-0">
+          <div class="mb-3 sm:py-4 sm:mr-10">
+            <h5 class="text-xl md:text-2xl text-[#ff6969] font-bold mb-1 text-center lg:text-right">
+              Training and maintenance
+            </h5>
+            <p class="text-gray-600 text-sm sm:text-base sm:max-w-[550px]  text-center lg:text-right">
+              We provide training materials and ongoing support to ensure that the system is used effectively. The final
+              step is to provide maintenance and support to ensure that the web system remains up-to-date, and secure.
+            </p>
+          </div>
+          <div class="sm:block hidden">
+            <img src="images/traning.png" alt="" srcset="" class="sm:w-[115px] w-16 ">
+          </div>
+        </div>
+        <div class="hidden lg:block w-[618px] sm:w-[755px] lg:w-[800px] md:w-[780px] pl-7">
+          <h3 class="uppercase font-bold text-2xl text-left">Step 4</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- ==================Why Choose Us================= -->
+  <div class="container mx-auto pb-6 lg:pt-16 px-10 sm:px-12 md:px-8 lg:px-2 xl:px-12 2xl:px-0">
+    <a href="#"
+      class="uppercase sm:mt-4 text-2xl sm:text-3xl underbar relative font-bold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet  mb-8 md:mb-16">
+      Why Choose us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+        stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+    <div class="grid  grid-cols-1 lg:grid-cols-3 mb-10 xl:mx-4 2xl:mx-0">
+      <div class="relative border overflow-hidden mb-8 lg:mb-0 md:mr-6 group -skew-x-12">
+        <div class="-skew-x-12 hidden sm:block">
+          <div>
+            <img src="images/clients.jpg" alt="" srcset="" class="w-full h-[300px] object-cover skew-x-12">
+          </div>
+        </div>
+        <div
+          class="bg-white static py-4 sm:py-0 sm:absolute ex sm:bottom-[-110px] md:bottom-[-88px] lg:bottom-[-207px] xl:bottom-[-188px] 2xl:bottom-[-138px] transition-all duration-300 ease-in-out  lg:group-hover:bottom-0">
+          <div class="flex justify-center items-center">
+            <h4 class="text-xl lg:text-2xl py-3 px-3  md:py-4 md:px-7 skew-x-12">Experience</h4>
+            <button class="bg-[#ff6969] py-3 px-5 -skew-x-12 mr-6"><i
+                class="fa-solid fa-arrow-right skew-x-12 text-white"></i></button>
+          </div>
+          <p class="px-7 pb-5 text-justify skew-x-12">We have the knowledge and expertise necessary to create a
+            professional-looking website that is both visually appealing
+            and functional. They can also help you avoid common pitfalls and ensure your website is optimized for search
+            engines and
+            user experience.</p>
+        </div>
+      </div>
+      <div class="relative border overflow-hidden md:mr-6 group mb-8 lg:mb-0 -skew-x-12">
+        <div class="-skew-x-12 hidden sm:block">
+          <div>
+            <img src="images/clients2.jpg" alt="" srcset="" class="w-full h-[300px] object-cover skew-x-12">
+          </div>
+        </div>
+        <div
+          class="bg-white py-4 sm:py-0 sm:absolute qua  sm:bottom-[-110px] md:bottom-[-88px] lg:bottom-[-207px] xl:bottom-[-188px] 2xl:bottom-[-138px] transition-all duration-300 ease-in-out  lg:group-hover:bottom-0">
+          <div class="flex justify-center items-center">
+            <h4 class="text-2xl py-4 px-7 skew-x-12">Quality</h4>
+            <button class="bg-[#ff6969] py-3 px-5 -skew-x-12 mr-6"><i
+                class="fa-solid fa-arrow-right skew-x-12 text-white"></i></button>
+          </div>
+          <p class="px-7 pb-5 text-justify skew-x-12">A high-quality website is designed with the user in mind, making
+            it easy to
+            navigate and find the information they need
+            quickly. This improves the user. Your website is an extension of your brand, and a high-quality website can
+            help to
+            reinforce your brand identity and values.</p>
+        </div>
+      </div>
+      <div class="relative border overflow-hidden  group -skew-x-12">
+        <div class="-skew-x-12 hidden sm:block">
+          <div>
+            <img src="images/clients3.jpg" alt="" srcset="" class="w-full h-[300px] object-cover skew-x-12">
+          </div>
+        </div>
+        <div
+          class="bg-white static py-4 sm:py-0 sm:absolute repu sm:bottom-[-136px] md:bottom-[-114px] lg:bottom-[-234px]  xl:bottom-[-210px] 2xl:bottom-[-140px] transition-all duration-300 ease-in-out  lg:group-hover:bottom-0">
+          <div class="flex justify-center items-center">
+            <h4 class="text-2xl py-4 px-7 skew-x-12">Reputation</h4>
+            <button class="bg-[#ff6969] py-3 px-5 -skew-x-12 mr-6"><i
+                class="fa-solid fa-arrow-right skew-x-12 text-white"></i></button>
+          </div>
+          <p class="px-7 pb-5 text-justify skew-x-12">A reputed website company is likely to have a team of experienced
+            professionals with the knowledge and expertise
+            necessary to create a high-quality website. They will have a proven track record of delivering successful
+            projects and
+            can provide valuable insights and recommendations based on their past experience.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-2 xl:mx-4 2xl:mx-0">
+      <div class="relative border overflow-hidden lg:mr-6 group  mb-10 lg:mb-0 -skew-x-12">
+        <div class="-skew-x-12 hidden sm:block">
+          <div>
+            <img src="images/clients4.jpg" alt="" srcset="" class="w-full h-[300px] object-cover skew-x-12">
+          </div>
+        </div>
+        <div
+          class="bg-white py-4 sm:py-0 static sm:absolute bottom-[-212px] sm:bottom-[-108px]  md:bottom-[-114px] lg:bottom-[-165px] xl:bottom-[-136px] 2xl:bottom-[-112px] transition-all duration-300 ease-in-out lg:group-hover:bottom-0">
+          <div class="flex justify-center items-center">
+            <h4 class="text-2xl py-4 px-7 skew-x-12">Professionalism</h4>
+            <button class="bg-[#ff6969] py-3 px-5 -skew-x-12 mr-6"><i
+                class="fa-solid fa-arrow-right skew-x-12 text-white"></i></button>
+          </div>
+          <p class="px-7 pb-5 text-justify skew-x-12">Professional web design companies have a team of experienced
+            designers who
+            can create a visually appealing website that
+            reflects your brand identity and helps you stand out from your competitors. A professional web design
+            company can create
+            a website that is easy to navigate and provides a positive user experience.</p>
+        </div>
+      </div>
+      <div class="relative border overflow-hidden group -skew-x-12">
+        <div class="-skew-x-12 hidden sm:block">
+          <div>
+            <img src="images/clients5.jpg" alt="" srcset="" class="w-full h-[300px] object-cover skew-x-12">
+          </div>
+        </div>
+        <div
+          class="bg-white py-4 sm:py-0 sm:absolute bottom-[-162px] sm:bottom-[-87px] lg:bottom-[-112px] xl:bottom-[-90px] transition-all duration-300 ease-in-out lg:group-hover:bottom-0">
+          <div class="flex justify-center items-center">
+            <h4 class="text-2xl py-4 px-7 skew-x-12">24/7 Support</h4>
+            <button class="bg-[#ff6969] py-3 px-5 -skew-x-12 mr-6"><i
+                class="fa-solid fa-arrow-right skew-x-12 text-white"></i></button>
+          </div>
+          <p class="px-7 pb-5 text-justify skew-x-12">With 24/7 support, businesses can provide customer service and
+            assistance
+            around the clock. This can help to improve
+            customer satisfaction and loyalty, as customers will appreciate the ability to get help whenever they need
+            it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================Industries We Serve================= -->
+  <div class="bg-[#fafbfd] py-5 px-5 md:pr-12 lg:py-16">
+    <div class="container mx-auto">
+      <a href="#"
+        class="uppercase sm:mt-4 text-2xl sm:text-3xl underbar relative font-bold flex justify-center items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet  mb-14">
+        Industries We Serve<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+          stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </a>
+    </div>
+    <div class="container lg:mx-auto mb-5 indus_we_serve xl:pr-[100px] xl:pl-[70px]">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+        <div class="lg:-skew-x-12">
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/ecommerce.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Retail
+                  and
+                  E-commerce</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black" style="background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Retail
+                  and
+                  E-commerce</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/fintech.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Fintech</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black" style="background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Fintech</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/technology.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Technology</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Technology</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="lg:mr-7 lg:mt-36 lg:-skew-x-12">
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/healthcare.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Healthcare</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+      background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+      opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Healthcare</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/automotive.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute lg:skew-x-12 bottom-3 left-5 text-xl text-white font-semibold ">Automotive</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+      background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+      opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Automotive</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/menufacturing.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Menufacturing</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+      background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+      opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Menufacturing</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="lg:mr-3 lg:-skew-x-12">
+          <div class="relative indus_box mb-5 ">
+            <a href="#">
+              <div>
+                <img src="images/education.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Education</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+              background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+              opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold skew-x-12">
+                  Education</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/crypto.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Cryptocurrencies</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+              background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+              opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold skew-x-12">
+                  Cryptocurrencies</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/ad tech.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Ad Tech</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+              background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+              opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold skew-x-12">
+                  Ad Tech</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="lg:mt-10 lg:-skew-x-12">
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/enterrainment.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Entertainment and
+                  Media
+                </h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+              background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+              opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Entertainment and Media</h4>
+              </div>
+            </a>
+          </div>
+          <div class="relative indus_box mb-5">
+            <a href="#">
+              <div>
+                <img src="images/oil and gas.jpg" alt="" class="w-96 h-32 md:h-48">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">Oil and Gas</h4>
+              </div>
+              <div class="img_overlay absolute top-0 left-0 w-full h-full bg-black " style="background-color: #FF9A8B;
+              background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+              opacity: 0.8;">
+                <h4 class="absolute bottom-3 left-5 text-xl text-white font-semibold lg:skew-x-12">
+                  Oil and Gas</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================== Delivering=================== -->
+  <div class="container mx-auto relative z-20">
+    <div
+      class="px-[30px] sm:px-[50px] lg:flex justify-between xl:pl-5 sm:mx-10 md:mx-0 mt-16 md:mt-10 lg:mt-16 relative md:py-20">
+      <div class="-skew-x-12 pl-[45px] xl:pl-[52px] 2xl:pl-0 mr-[30px] sm:mr-28 xl:mr-0">
+        <img src="images/d-img3.jpg" alt="d-img3"
+          class="w-[518px] lg:w-[630px] lg:h-[400px] xl:w-[644px] xl:h-[438px]" />
+        <div
+          class="lg:w-[400px] lg:h-[310px] xl:w-[600px] xl:h-[444px] w-[130px] h-[100px] sm:w-[300px] sm:h-[222px] bg-[#f72f54] absolute -top-8 lg:-top-16 left-16 lg:left-40 overflow-hidden hoverdiv">
+          <img src="images/img5.jpg" alt="img5"
+            class="scale-110 absolute bottom-0 transition-all duration-1000 ease-out hoverimage" />
+          <div class="w-full z-10 absolute -bottom-20 text-center hovertext">
+            <h2 class="text-xl lg:text-4xl uppercase text-white skew-x-12">
+              <span class="font-bold text-white">Wenowhere</span>
+            </h2>
+          </div>
+          <div class="hovergradient"></div>
+        </div>
+      </div>
+      <div class="lg:w-[41.33%] xl:w-1/3 flex flex-col justify-center mr-10 lg:mr-0 mt-5 lg:pl-10 xl:pl-5 2xl:pl-0">
+        <h3 class="text-2xl sm:text-3xl xl:text-4xl font-semibold">Delivering Exceptional Digital Experiences
+        </h3>
+        <p class="text-[#6f6f6d] leading-relaxed mt-4 text-base xl:text-xl">
+          Whether you need a custom e-com- merce platform, a sophisticated content management system, or a dynamic web
+          application, we've got you covered. Let's collaborate and bring your vision to life!
+        </p>
+        <a href="#"
+          class="uppercase mt-4 text-sm font-bold flex items-center gap-0 hover:gap-1 transition-all duration-200 ease-in hoverviolet hover:text-[#ff6969]">Read
+          More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4"
+            stroke="currentColor" class="w-4 h-4 ml-1 font-extrabold text-black transition-all duration-200 ease-in">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- ==================Footer Section ================= -->
+  <div id="contact" class="relative footer"
+    style="background: url(images/Backgrounds/footer.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="container mx-auto">
+      <div class="flex justify-center flex-wrap xl:flex-nowrap gap-12 pt-20 md:pt-36">
+        <div class="flex md:justify-center md:items-center flex-wrap md:flex-nowrap ml-20 sm:ml-0">
+          <div class="w-[400px] mr-5">
+            <img src="images/logo/logo2.png" alt="" srcset="" class="w-56">
+            <h4 class="text-[#ff6969] font-semibold text-xl sm:text-2xl mt-3 mb-2 italic">Information Technology
+              Company
+            </h4>
+            <p class="text-white mb-3 text-sm sm:text-base pr-4 sm:pr-0">We specialize in crafting complex web systems
+              that are
+              designed to meet your unique needs and exceed your
+              expectations.</p>
+            <span class="text-white font-semibold text-base">Address: 75/A-KB Tower, DB Road, Mymensingh
+              +8801715780291 pitechnobd@gmail.com
+            </span>
+          </div>
+          <div class="text-white w-[240px]">
+            <h4 class="font-bold text-xl mb-5 mt-6 md:mt-0">Quick Links</h4>
+            <ul class="space-y-4">
+              <li class="group"><a href="#">Web design and development<i
+                    class="fa-solid fa-angle-right ml-2 group-hover:ml-3 group-hover:text-[#ff6969]"></i></a>
+              </li>
+              <li class="group"><a href="#">E-commerce solutions<i
+                    class="fa-solid fa-angle-right  ml-2 group-hover:ml-3 group-hover:text-[#ff6969]"></i></a></li>
+              <li class="group"><a href="#">Custom web applications<i
+                    class="fa-solid fa-angle-right  ml-2 group-hover:ml-3 group-hover:text-[#ff6969]"></i></a>
+              </li>
+              <li class="group"><a href="#">Content management systems<i
+                    class="fa-solid fa-angle-right  ml-2 group-hover:ml-3 group-hover:text-[#ff6969]"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center bg-white py-16 px-10 rounded-[20px]">
+          <form action="#">
+            <h4 class="text-3xl font-semibold mb-5">Sign up to our newsletter</h4>
+            <div class="mb-4  border-b-2 border-gray-300 leading-10">
+              <input type="text" placeholder="Enter Your Name"
+                class="placeholder:text-xl focus:outline-none border-none">
+            </div>
+            <div class="mb-8 border-b-2 border-gray-300 leading-10">
+              <input type="email" placeholder="Enter Your email"
+                class="placeholder:text-lg focus:outline-none border-none">
+            </div>
+            <div class="w-[300px] sm:w-[500px]">
+              <span class="text-[#7a7777] text-sm sm:text-base">WE Nowhere needs the information you give
+                to
+                contact you
+                about our
+                products
+                and
+                services. You may
+                unsubscribe at any
+                time. For more information please review our <strong class="text-black"><a href="#">privacy
+                    policy</a></strong></span>
+            </div>
+            <div class="mt-6 -skew-x-12">
+              <button type="submit"
+                class="text-sm transition-all duration-300 ease-in-out sm:text-base uppercase text-black font-bold border-2 border-[#ff6969] py-2 px-4 hover:bg-[#ff6969] hover:text-white hover:border-2 hover:border-[#ff6969] ">
+                <p class="skew-x-12">SUBSCRIBE</p>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-evenly mt-10 pb-4">
+      <div class="flex space-x-4 social_icons cursor-pointer mr-4 sm:mr-0">
+        <a href="#">
+          <img src="icons/facebook.png" alt="" srcset="" class="w-6">
+        </a>
+        <a href="#"><img src="icons/instagram.png" alt="" srcset="" class="w-6"></a>
+        <a href="#"><img src="icons/linkedin.png" alt="" srcset="" class="w-6"></a>
+        <a href="#">
+          <img src="icons/twitter.png" alt="" srcset="" class="w-6">
+        </a>
+      </div>
+      <div>
+        <span class="text-white">Copyright © 2023 WE Nowhere</span>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute z-10 rotate-180 bottom-[65%]"
+      id="wave2">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,128C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        id="wave_svg"></path>
+    </svg>
+  </div>
+
+  <!-- Footer Section End -->
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+</body>
+
+</html>
